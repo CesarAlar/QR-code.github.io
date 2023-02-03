@@ -1,0 +1,84 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --Outfit: 'Outfit', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--Outfit);
+    line-height: 1;
+}
+a{
+    margin: 0;
+}
+.conteiner{
+    background-color: var(--Light-gray);
+    height: 100vh;
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97%;
+}
+.card{
+    width: 33rem;
+    border-radius: 25px;
+    padding: 1.5rem;
+    background-color: var(--White);
+}
+.content{
+    margin: 2rem 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+.content h1{
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+.content .text{
+    font-size: 1.5rem;
+    margin: 2.5rem 0;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    background-color: var(--Light-gray);
+}
+
+.fab{
+    font-size: 2rem;
+    color: white;
+    margin: 0 1rem;
+}
+.fa-linkedin-in{
+    color: rgb(49, 135, 255);
+}
+.fa-github{
+    color: black;
+}
+@media (min-width: 768px){
+    .card{
+        transition: box-shadow .9s ;
+    }
+      .card:hover{
+        -webkit-box-shadow: 11px 17px 24px 5px rgba(0,0,0,0.47);
+        -moz-box-shadow: 11px 17px 24px 5px rgba(0,0,0,0.47);
+        box-shadow: 11px 17px 24px 5px rgba(0,0,0,0.47);
+      }
+}
+
